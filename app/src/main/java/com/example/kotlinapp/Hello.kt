@@ -29,16 +29,16 @@ fun main(array: Array<String>) {
 //    java基本数据类型：byte1 boolean1 short2 char2 float4 int4  long8 double8
 //    kotlin基本数据类型：byte1 short2  float4 int4  long8 double8
 
-    val a = 10000
-    println(a === a) // true，值相等，对象地址相等
-
-    //经过了装箱，创建了两个不同的对象
-    val boxedA: Int? = a
-    val anotherBoxedA: Int? = a
-
-    //虽然经过了装箱，但是值是相等的，都是10000
-    println(boxedA === anotherBoxedA) //  false，值相等，对象地址不一样
-    println(boxedA == anotherBoxedA) // true，值相等
+//    val a = 10000
+//    println(a === a) // true，值相等，对象地址相等
+//
+//    //经过了装箱，创建了两个不同的对象
+//    val boxedA: Int? = a
+//    val anotherBoxedA: Int? = a
+//
+//    //虽然经过了装箱，但是值是相等的，都是10000
+//    println(boxedA === anotherBoxedA) //  false，值相等，对象地址不一样
+//    println(boxedA == anotherBoxedA) // true，值相等
 
 
 //    var  b1:Byte = 1
@@ -57,10 +57,18 @@ fun main(array: Array<String>) {
 //    val str = "$s.length is ${s.length}" // 求值结果为 "runoob.length is 6"
 //    println(str)
 
-    val price = """
-    ${'$'}9.99
-    """
-    println(price)
+//    val price = """
+//    ${'$'}9.99
+//    """
+//    println(price)
+//
+//    val arrayOf = arrayOf(1, 2, 3)
+
+    val a = 1000
+    when(a){
+        !in 1..10 -> println("不在范围内")
+        in 1..10000 -> println("在范围内")
+    }
 
 
 }
