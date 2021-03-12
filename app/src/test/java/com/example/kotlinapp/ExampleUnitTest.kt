@@ -12,6 +12,13 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        isContainsName("123","1234")
+    }
+
+
+    fun isContainsName(callbackMethod: String, name: String) {
+       val has = true
+       val javaScript = "javascript:$callbackMethod('${has.toString()}')"
+        println(javaScript)
     }
 }
